@@ -1,4 +1,5 @@
 import './App.scss';
+import Login from "../src/components/Login/Login";
 // react router dom
 import {
   BrowserRouter,
@@ -8,16 +9,17 @@ import {
 // pages
 import { Home, MealDetails, Error, Category } from "./pages/index";
 // components
-import Header from "./components/Header/Header";
+import SignUp from './components/Login/SignUp';
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Sidebar />
       <Routes>
-        <Route path = "/" element = {<Home />} />
+        <Route path = '/signup' element = {<SignUp/>} />
+        <Route path='/' element = {<Login/>} />
+        <Route path = "/home" element = {<Home />} />
         <Route path = "/meal/:id" element = {<MealDetails />} />
         <Route path = "/meal/category/:name" element = {<Category />} />
         <Route path  = "*" element = {<Error />} />

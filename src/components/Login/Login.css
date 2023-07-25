@@ -1,0 +1,16 @@
+
+.login-form {
+    border: 2px solid rgb(8, 8, 8);
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(123, 156, 62);
+    border-radius: 30px;
+}
+
+.label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
